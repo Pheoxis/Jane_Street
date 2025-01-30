@@ -14,9 +14,9 @@ Celem analizy jest zrozumienie struktury danych, identyfikacja wzorców i zależ
 # Wymagania
 
 Aby uruchomić ten notebook, wymagane są następujące biblioteki:
-pandas
-numpy
-matplotlib
-seaborn
-dask
-statsmodels
+pandas  
+numpy  
+matplotlib  
+seaborn  
+dask  
+statsmodels  
