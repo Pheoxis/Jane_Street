@@ -12,9 +12,11 @@ Celem analizy jest zrozumienie struktury danych, identyfikacja wzorców i zależ
 5. **Wnioski** - podsumowanie wyników analizy.
 
 # Wymagania
-Aby uruchomić ten notebook, wymagane są następujące biblioteki:
 
+Aby uruchomić ten notebook, wymagane są następujące biblioteki:
 pandas
 numpy
 matplotlib
 seaborn
+dask
+statsmodels
