@@ -13,3 +13,7 @@ Na tej stronie znajduje się opis i wgląd do plików csv które zostału użyte
 Charts
 ________________________________________
 Na tej stronie znajdują się wykresy z EDA itp wraz z ich omówieniami 
+
+#Uruchomienie Dashboardu
+________________________________________
+Aby uruchomić dashboard należy dostac się do swojego venv oraz go aktywować następnie przejść do miejsca gdzie mamy plik introduction.py a następnie uruchomić komendę *streamlit run introduction.py*
