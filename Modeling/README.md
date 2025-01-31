@@ -50,6 +50,3 @@ Skrypt **DatasetConversion.ipynb** konwertuje dane do formatu **CSV**, tworzy la
 ## 6. Uruchomienie optymalizacji hiperparametrów
 W celu uruchomienia Ray Tune HPO, ustaw `RUN_HPO = True` w **RayTuneHPO.ipynb** i uruchom kod. Wyniki zapisywane są w katalogu `ray_optuna_results`.
 
-## 7. Kontakt
-W przypadku pytań skontaktuj się z **kubston20004** na **Weights & Biases** lub w repozytorium projektu.
-
