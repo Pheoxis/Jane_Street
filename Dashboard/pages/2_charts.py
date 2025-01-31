@@ -1,6 +1,7 @@
 import streamlit as st 
 from streamlit_extras.switch_page_button import switch_page
 from PIL import Image
+from pathlib import Path
 
 st.set_page_config(
     page_title="Przegląd Wykresów",
@@ -8,7 +9,7 @@ st.set_page_config(
     layout="wide",
 )
 
-path = r'../Dashboard/imiges'
+BASE_DIR = Path(__file__).resolve().parent
 
 st.markdown("""
     <style>
@@ -60,7 +61,7 @@ st.markdown("---")
 st.subheader("Responders")
 st.markdown("Heatmap")
 
-image = Image.open(f'{path}/Responders/heatmap.png')
+image = Image.open(BASE_DIR/'Responders/heatmap.png')
 st.image(image, width=500, use_container_width=False)
 
 txt0 ="""
