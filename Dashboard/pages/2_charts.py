@@ -61,7 +61,7 @@ st.markdown("---")
 st.subheader("Responders")
 st.markdown("Heatmap")
 
-image = Image.open(DASHBOARD_DIR/'Responders/heatmap.png')
+image = Image.open(DASHBOARD_DIR/'imiges/Responders/heatmap.png')
 st.image(image, width=500, use_container_width=False)
 
 txt0 ="""
