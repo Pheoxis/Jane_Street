@@ -60,7 +60,7 @@ def load_data(filepath):
 
 # Podgląd zbioru danych
 st.subheader("Podgląd Zbioru Danych")
-data = load_data(r'..\Dashboard\sampled_data_with_lags.csv')
+data = load_data(r'../Dashboard/sampled_data_with_lags.csv')
 st.dataframe(data, use_container_width=True)
 
 st.markdown("""
