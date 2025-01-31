@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 BASE_DIR = Path(__file__).resolve().parent
-
+DASHBOARD_DIR = BASE_DIR.parent
 st.markdown("""
     <style>
         /* General settings */
@@ -61,7 +61,7 @@ st.markdown("---")
 st.subheader("Responders")
 st.markdown("Heatmap")
 
-image = Image.open(BASE_DIR/'Responders/heatmap.png')
+image = Image.open(DASHBOARD_DIR/'Responders/heatmap.png')
 st.image(image, width=500, use_container_width=False)
 
 txt0 ="""
