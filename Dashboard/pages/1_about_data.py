@@ -60,7 +60,7 @@ def load_data(filepath):
 
 # Podgląd zbioru danych
 st.subheader("Podgląd Zbioru Danych")
-data = load_data(r'G:\JaneStreetReal\sampled_data_with_lags.csv')
+data = load_data(r'G:\JaneStreetReal\Dashboard\sampled_data_with_lags.csv')
 st.dataframe(data, use_container_width=True)
 
 st.markdown("""
@@ -74,13 +74,13 @@ st.markdown("""
 
 # Metadane cech
 st.subheader("Metadane Cech")
-features_df = pd.read_csv(r'G:/JaneStreetReal/jane-street-real-time-market-data-forecasting/features.csv')
+features_df = load_data(r'G:\JaneStreetReal\Dashboard\features.csv')
 st.dataframe(features_df.head(), use_container_width=True)
 
 tags_array_features = features_df.iloc[:, 1:].astype(int).values
 features = features_df['feature'].values
 
-# Compute the similarity matrix: number of matching tags between features
+
 feature_matrix = np.dot(tags_array_features, tags_array_features.T)
 
 # Streamlit app
@@ -107,7 +107,7 @@ if shows_plot:
 st.markdown("Metadane dotyczące zanonimizowanych cech.")
 
 # Metadane odpowiedzi
-data = pd.read_csv(r'G:/JaneStreetReal/jane-street-real-time-market-data-forecasting/responders.csv')
+data = load_data(r'G:\JaneStreetReal\Dashboard\responders.csv')
 
 # Display metadata
 st.subheader("Metadane Odpowiedzi")
@@ -115,12 +115,13 @@ st.dataframe(data.head(), use_container_width=True)
 st.markdown("Metadane dotyczące zanonimizowanych odpowiedzi.")
 
 # Convert tag columns to a NumPy array for easy comparison
-tags_array = data.iloc[:, 1:].astype(int).values
+tags_array = data.iloc[:, 1:].astype(bool).values
 responders = data['responder'].values
 
 # Compute a similarity matrix: number of matching tags between responders
-responder_matrix = np.dot(tags_array, tags_array.T)
-show_plot = st.checkbox("Pokaż macież dla responder", value=False, key="responder_checkbox")
+responder_matrix = (tags_array @ tags_array.T) > 0  # Sprawdza czy są jakiekolwiek wspólne wartości 1
+responder_matrix = responder_matrix.astype(int)  # Konwersja na 0/1
+show_plot = st.checkbox("Pokaż macierz dla responder", value=False, key="responder_checkbox")
 # Display the heatmap
 if show_plot:
     st.write("### Heatmap of Responder Similarities")
@@ -135,7 +136,7 @@ if show_plot:
 
 # Przykładowy format zgłoszenia
 st.subheader("Przykładowy Format Zgłoszenia")
-sample_submission = load_data('G:/JaneStreetReal/jane-street-real-time-market-data-forecasting/sample_submission.csv')
+sample_submission = load_data('G:\JaneStreetReal\Dashboard\sample_submission.csv')
 st.dataframe(sample_submission.head(), use_container_width=True)
 
 st.markdown("Ilustruje format, w jakim model powinien generować swoje przewidywania.")

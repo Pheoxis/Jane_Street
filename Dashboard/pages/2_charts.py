@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide",
 )
 
-path = r'G:\JaneStreetReal\imiges'
+path = r'G:\JaneStreetReal\Dashboard\imiges'
 
 st.markdown("""
     <style>
@@ -98,7 +98,6 @@ st.markdown(txt0)
 st.markdown("Histogramy rozkładu wartości zmiennych responder_X")
 images = [Image.open(rf'{path}\Responders\res0.png'), Image.open(rf'{path}\Responders\res1.png'), Image.open(rf'{path}\Responders\res2.png'),Image.open(rf'{path}\Responders\res3.png')
           ,Image.open(rf'{path}\Responders\res4.png'),Image.open(rf'{path}\Responders\res5.png'),Image.open(rf'{path}\Responders\res6.png'),Image.open(rf'{path}\Responders\res7.png'),Image.open(rf'{path}\Responders\res8.png')]
-#captions = ['Caption 1', 'Caption 2', 'Caption 3', 'Caption 3', 'Caption 3', 'Caption 3', 'Caption 3', 'Caption 3', 'Caption 3']
 st.image(images, width=500, use_container_width=False)
 txt="""
 ### Podsumowanie Histogramów
@@ -130,7 +129,6 @@ txt="""
 st.markdown(txt)
 
 st.subheader("ACF and PACF for responder_6")
-# st.markdown("ACF")
 
 images1 = [Image.open(rf'{path}\ACF.png'), Image.open(rf'{path}\PACF.png')]
 captions = ['ACF', 'PACF']
