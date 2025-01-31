@@ -57,4 +57,6 @@ o	  features.csv -> zawiera przykładowe featuery z projektu
 o	  sample_submission.csv -> zawiera wstępną odpowiedź modelu  
 o	  sampled_data_with_lags.csv -> przykładowe cechy z projektu  
 o	  responders.csv -> przykadowe odpowiedzi z projektu  
-o	  README.md -> zawiera krótki opis najważniejszych plików 
+o	  README.md -> zawiera krótki opis najważniejszych plików
+3.	Model :
+o   
