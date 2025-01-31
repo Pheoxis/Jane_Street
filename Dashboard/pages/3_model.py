@@ -2,6 +2,7 @@
 import streamlit as st 
 from streamlit_extras.switch_page_button import switch_page
 from PIL import Image
+from pathlib import Path
 
 st.set_page_config(
     page_title="Modelowanie",
@@ -9,7 +10,8 @@ st.set_page_config(
     layout="wide",
 )
 
-
+BASE_DIR = Path(__file__).resolve().parent
+DASHBOARD_DIR = BASE_DIR.parent
 
 st.markdown("""
     <style>
@@ -61,7 +63,7 @@ st.markdown("---")
 
 st.subheader("Analiza modelu")
 
-image = Image.open(f'..\Dashboard\imiges\cechySHAP.png')
+image = Image.open(DASHBOARD_DIR/'imiges/cechySHAP.png')
 st.image(image, width=500, use_container_width=False)
 
 st.markdown('''
@@ -72,7 +74,7 @@ Oś X – reprezentuje wartości SHAP, które wskazują, jak mocno dana cecha wp
             ''')
 
 st.markdown("---")
-image = Image.open(f'..\Dashboard\imiges\Rozkład.png')
+image = Image.open(DASHBOARD_DIR/'imiges/Rozkład.png')
 st.image(image, width=500, use_container_width=False)
 
 st.markdown('''

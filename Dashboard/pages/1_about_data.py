@@ -5,6 +5,11 @@ import seaborn as sns
 from streamlit_extras.switch_page_button import switch_page
 from io import BytesIO
 import numpy as np
+from pathlib import Path
+
+
+BASE_DIR = Path(__file__).resolve().parent
+DASHBOARD_DIR = BASE_DIR.parent
 
 # Konfiguracja strony
 st.set_page_config(
@@ -60,7 +65,7 @@ def load_data(filepath):
 
 # Podgląd zbioru danych
 st.subheader("Podgląd Zbioru Danych")
-data = load_data(r'../Dashboard/sampled_data_with_lags.csv')
+data = load_data(DASHBOARD_DIR/'sampled_data_with_lags.csv')
 st.dataframe(data, use_container_width=True)
 
 st.markdown("""
@@ -74,7 +79,7 @@ st.markdown("""
 
 # Metadane cech
 st.subheader("Metadane Cech")
-features_df = load_data(r'..\Dashboard\features.csv')
+features_df = load_data(DASHBOARD_DIR/'features.csv')
 st.dataframe(features_df.head(), use_container_width=True)
 
 tags_array_features = features_df.iloc[:, 1:].astype(int).values
@@ -107,7 +112,7 @@ if shows_plot:
 st.markdown("Metadane dotyczące zanonimizowanych cech.")
 
 # Metadane odpowiedzi
-data = load_data(r'..\Dashboard\responders.csv')
+data = load_data(DASHBOARD_DIR/'responders.csv')
 
 # Display metadata
 st.subheader("Metadane Odpowiedzi")
@@ -136,7 +141,7 @@ if show_plot:
 
 # Przykładowy format zgłoszenia
 st.subheader("Przykładowy Format Zgłoszenia")
-sample_submission = load_data('G:\JaneStreetReal\Dashboard\sample_submission.csv')
+sample_submission = load_data(DASHBOARD_DIR/'sample_submission.csv')
 st.dataframe(sample_submission.head(), use_container_width=True)
 
 st.markdown("Ilustruje format, w jakim model powinien generować swoje przewidywania.")
