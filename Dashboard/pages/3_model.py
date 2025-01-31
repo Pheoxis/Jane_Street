@@ -64,7 +64,7 @@ st.markdown("---")
 st.subheader("Analiza modelu")
 
 image = Image.open(DASHBOARD_DIR/'imiges/cechySHAP.png')
-st.image(image, width=500, use_container_width=False)
+st.image(image, width=500, use_container_width=False) 
 
 st.markdown('''
             Wykres przedstawia 20 najważniejszych cech modelu według wartości SHAP, co oznacza ich wpływ na przewidywanie 'responder_6'. 
