@@ -6,7 +6,7 @@ Dziedzina: Finanse
 Opis: Projekt opiera się na konkursie Kaggle "Jane Street Real-Time Market Data Forecasting", gdzie celem jest opracowanie modelu przewidującego odpowiedź rynku na podstawie historycznych danych finansowych. Analizowane dane obejmują zmienne czasowe, takie jak symbol, czas i zmienne finansowe z dużą liczbą braków danych i niestacjonarności.
 ________________________________________
 Metoda Pozyskiwania Danych
-Dane do projektu zostały pozyskane z oficjalnego zestawu udostępnionego przez organizatorów konkursu Kaggle, zawierającego pliki w formacie .parquet. Dane te obejmują historyczne zmienne finansowe, odpowiedzi rynkowe oraz zmienne pomocnicze, takie jak wagi i identyfikatory symboli.[ Link do Strony z której można pobrać ](https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/data?select=responders.csv)
+Dane do projektu zostały pozyskane z oficjalnego zestawu udostępnionego przez organizatorów konkursu Kaggle, zawierającego pliki w formacie .parquet. Dane te obejmują historyczne zmienne finansowe, odpowiedzi rynkowe oraz zmienne pomocnicze, takie jak wagi i identyfikatory symboli.[ Link do Strony z której można pobrać ](https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting/data?select=responders.csv)  
 W projekcie wykorzystano również biblioteki Polars oraz Pandas do wstępnej analizy i przetwarzania danych.
 Etapy pozyskiwania danych:
 1.	Pobranie danych z platformy Kaggle.
