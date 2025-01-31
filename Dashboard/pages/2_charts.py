@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide",
 )
 
-path = r'G:\JaneStreetReal\Dashboard\imiges'
+path = r'..\Dashboard\imiges'
 
 st.markdown("""
     <style>
@@ -368,7 +368,10 @@ txt10="""
 st.markdown(txt10)
 
 
-col1, col2, col3 = st.columns([3, 7, 2])
+col1, col2, col3 = st.columns([3, 7, 3])
 with col1:
-    if st.button("Go to about data"):
+    if st.button("Przejdz do opisu danych"):
         switch_page("about data")
+with col3:
+    if st.button("Przejdź do Modelowania"):
+        switch_page("model")
