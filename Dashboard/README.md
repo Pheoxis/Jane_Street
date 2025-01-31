@@ -15,4 +15,11 @@ Na tej stronie znajdują się wykresy z EDA itp wraz z ich omówieniami
 ________________________________________
 •	Uruchomienie Dashboardu:
 
-Aby uruchomić dashboard należy dostac się do swojego venv oraz go aktywować następnie przejść do miejsca gdzie mamy plik introduction.py a następnie uruchomić komendę *streamlit run introduction.py*
+Aby uruchomić dashboard należy dostac się do swojego venv oraz go aktywować następnie przejść do miejsca gdzie mamy plik introduction.py a następnie uruchomić komendę *streamlit run introduction.py*  
+
+najważniejsze biblioteki:  
+•	pandas==2.2.3  
+• streamlit==1.41.1  
+• numpy==2.2.1  
+• matplotlib==3.10.0  
+• seaborn==0.13.2
