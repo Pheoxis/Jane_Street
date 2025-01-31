@@ -43,3 +43,5 @@ Projekt zakłada stworzenie interaktywnego dashboardu przedstawiającego:
 •	Wyniki predykcji dla wybranych modeli.
 •	Wizualizacje znaczenia cech (SHAP).
 ________________________________________
+Opis struktury projektu  python 3.10+
+
