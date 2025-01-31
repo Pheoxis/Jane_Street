@@ -51,10 +51,10 @@ o	README.md -> zawiera opis EDA
 o	sampled_output.parquet -> zawiera zsamplowane dane na których zostało przeprowadzone eda  
 2.	Dashboard:  
 o		imiges -> zawiera pomniejsze foldery i zdjęcia które sa wykorzystywane w dashboardzie, posegregowane do poszczególnych problemów  
-o	  pages -> zawiera plik 1_about_data.py i 2_charts.py opisane są w folderze Dashboard  
-o	  introduction.py -> główna strona dashboardu, bardziej opisana w folderze Dashboard  
+o	  pages -> zawiera plik 1_about_data.py i 2_charts.py opisane są w folderze README.md   
+o	  introduction.py -> główna strona dashboardu, bardziej opisana w README.md  
 o	  features.csv -> zawiera przykładowe featuery z projektu  
 o	  sample_submission.csv -> zawiera wstępną odpowiedź modelu  
 o	  sampled_data_with_lags.csv -> przykładowe cechy z projektu  
 o	  responders.csv -> przykadowe odpowiedzi z projektu  
-
+o	  README.md -> zawiera krótki opis najważniejszych plików 
