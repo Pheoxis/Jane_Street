@@ -74,7 +74,7 @@ Oś X – reprezentuje wartości SHAP, które wskazują, jak mocno dana cecha wp
             ''')
 
 st.markdown("---")
-image = Image.open(DASHBOARD_DIR/'imiges/Rozkład.png')
+image = Image.open(DASHBOARD_DIR/'imiges/Rozkad.png')
 st.image(image, width=500, use_container_width=False)
 
 st.markdown('''
