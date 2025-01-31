@@ -97,8 +97,8 @@ txt0 ="""
 st.markdown(txt0)
 
 st.markdown("Histogramy rozkładu wartości zmiennych responder_X")
-images = [Image.open(rf'{path}\Responders\res0.png'), Image.open(rf'{path}\Responders\res1.png'), Image.open(rf'{path}\Responders\res2.png'),Image.open(rf'{path}\Responders\res3.png')
-          ,Image.open(rf'{path}\Responders\res4.png'),Image.open(rf'{path}\Responders\res5.png'),Image.open(rf'{path}\Responders\res6.png'),Image.open(rf'{path}\Responders\res7.png'),Image.open(rf'{path}\Responders\res8.png')]
+images = [Image.open(DASHBOARD_DIR/'imiges/Responders/res0.png'), Image.open(DASHBOARD_DIR/'imiges/Responders/res1.png'), Image.open(DASHBOARD_DIR/'imiges/Responders/res2.png'),Image.open(DASHBOARD_DIR/'imiges/Responders/res3.png')
+          ,Image.open(DASHBOARD_DIR/'imiges/Responders/res4.png'),Image.open(DASHBOARD_DIR/'imiges/Responders/res5.png'),Image.open(DASHBOARD_DIR/'imiges/Responders/res6.png'),Image.open(DASHBOARD_DIR/'imiges/Responders/res8.png')]
 st.image(images, width=500, use_container_width=False)
 txt="""
 ### Podsumowanie Histogramów
@@ -131,7 +131,7 @@ st.markdown(txt)
 
 st.subheader("ACF and PACF for responder_6")
 
-images1 = [Image.open(rf'{path}\ACF.png'), Image.open(rf'{path}\PACF.png')]
+images1 = [Image.open(DASHBOARD_DIR/'imiges/ACF.png'), Image.open(DASHBOARD_DIR/'imiges/PACF.png')]
 captions = ['ACF', 'PACF']
 st.image(images1, width=500, use_container_width=False)
 
@@ -169,9 +169,9 @@ txt1 ="""
 st.markdown(txt1)
 st.subheader("Features")
 
-images2 = [Image.open(rf'{path}\Features\feat.png'), Image.open(rf'{path}\Features\feat1.png'), Image.open(rf'{path}\Features\feat2.png'),Image.open(rf'{path}\Features\feat3.png')
-          ,Image.open(rf'{path}\Features\feat4.png'),Image.open(rf'{path}\Features\feat5.png'),Image.open(rf'{path}\Features\feat6.png'),Image.open(rf'{path}\Features\feat7.png'),Image.open(rf'{path}\Features\feat8.png'),
-          Image.open(rf'{path}\Features\feat9.png')]
+images2 = [Image.open(DASHBOARD_DIR/'imiges/Features/feat.png'), Image.open(DASHBOARD_DIR/'imiges/Features/feat1.png'), Image.open(DASHBOARD_DIR/'imiges/Features/feat2.png'),Image.open(DASHBOARD_DIR/'imiges/Features/feat3.png')
+          ,Image.open(DASHBOARD_DIR/'imiges/Features/feat4.png'),Image.open(DASHBOARD_DIR/'imiges/Features/feat5.png'),Image.open(DASHBOARD_DIR/'imiges/Features/feat6.png'),Image.open(DASHBOARD_DIR/'imiges/Features/feat7.png'),Image.open(DASHBOARD_DIR/'imiges/Features/feat8.png'),
+          Image.open(DASHBOARD_DIR/'imiges/Features/feat9.png')]
 
 st.image(images2, width=500, use_container_width=False)
 
@@ -218,7 +218,7 @@ st.markdown(txt11)
 
 st.subheader("Weights")
 
-image2 = Image.open(f'{path}\Weights\weight.png')
+image2 = Image.open(DASHBOARD_DIR/'imiges/Weights/weight.png')
 st.image(image2, width=500, use_container_width=False)
 
 txt2="""
@@ -233,7 +233,7 @@ txt2="""
 """
 st.markdown(txt2)
 
-image3 = Image.open(f'{path}\Weights\weight2.png')
+image3 = Image.open(DASHBOARD_DIR/'imiges/Weights/weight2.png')
 st.image(image3, width=500, use_container_width=False)
 
 txt3="""
@@ -248,7 +248,7 @@ txt3="""
 """
 st.markdown(txt3)
 
-image4 = Image.open(f'{path}\Weights\weight3.png')
+image4 = Image.open(DASHBOARD_DIR/'imiges/Weights/weight3.png')
 st.image(image4, width=500, use_container_width=False)
 
 txt4="""
@@ -263,7 +263,7 @@ txt4="""
 """
 st.markdown(txt4)
 
-image5 = Image.open(f'{path}\Weights\weight4.png')
+image5 = Image.open(DASHBOARD_DIR/'imiges/Weights/weight4.png')
 st.image(image5, width=500, use_container_width=False)
 
 txt5="""
@@ -279,7 +279,7 @@ txt5="""
 st.markdown(txt5)
 
 
-image6 = Image.open(f'{path}\Weights\weight5.png')
+image6 = Image.open(DASHBOARD_DIR/'imiges/Weights/weight5.png')
 st.image(image6, width=500, use_container_width=False)
 
 txt6="""
@@ -306,7 +306,7 @@ st.markdown(text7)
 
 st.subheader("NaN")
 
-image7 = Image.open(rf'{path}\nan.png')
+image7 = Image.open(DASHBOARD_DIR/'imiges/nan.png')
 st.image(image7, width=500, use_container_width=False)
 
 txt7="""
@@ -321,7 +321,7 @@ txt7="""
 """
 st.markdown(txt7)
 
-image8 = Image.open(rf'{path}\nan1.png')
+image8 = Image.open(DASHBOARD_DIR/'imiges/nan1.png')
 st.image(image8, width=500, use_container_width=False)
 
 txt8="""
@@ -337,7 +337,7 @@ txt8="""
 """
 st.markdown(txt8)
 
-image9 = Image.open(rf'{path}\nan2.png')
+image9 = Image.open(DASHBOARD_DIR/'imiges/nan2.png')
 st.image(image9, width=500, use_container_width=False)
 
 txt9="""
