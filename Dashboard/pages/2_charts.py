@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide",
 )
 
-path = r'..\Dashboard\imiges'
+path = r'../Dashboard/imiges'
 
 st.markdown("""
     <style>
@@ -60,7 +60,7 @@ st.markdown("---")
 st.subheader("Responders")
 st.markdown("Heatmap")
 
-image = Image.open(f'{path}\Responders\heatmap.png')
+image = Image.open(f'{path}/Responders/heatmap.png')
 st.image(image, width=500, use_container_width=False)
 
 txt0 ="""
