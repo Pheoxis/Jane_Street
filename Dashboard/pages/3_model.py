@@ -1,3 +1,4 @@
+
 import streamlit as st 
 from streamlit_extras.switch_page_button import switch_page
 from PIL import Image
@@ -8,7 +9,7 @@ st.set_page_config(
     layout="wide",
 )
 
-path = r'G:\JaneStreetReal\Dashboard\imiges'
+
 
 st.markdown("""
     <style>
@@ -60,7 +61,7 @@ st.markdown("---")
 
 st.subheader("Analiza modelu")
 
-image = Image.open(f'{path}\cechySHAP.png')
+image = Image.open(f'..\Dashboard\imiges\cechySHAP.png')
 st.image(image, width=500, use_container_width=False)
 
 st.markdown('''
@@ -71,7 +72,7 @@ Oś X – reprezentuje wartości SHAP, które wskazują, jak mocno dana cecha wp
             ''')
 
 st.markdown("---")
-image = Image.open(f'{path}\Rozkład.png')
+image = Image.open(f'..\Dashboard\imiges\Rozkład.png')
 st.image(image, width=500, use_container_width=False)
 
 st.markdown('''
@@ -122,3 +123,4 @@ col1, col2, col3 = st.columns([3, 7, 2])
 with col1:
     if st.button("Wróć do Wykresu"):
         switch_page("charts")
+
