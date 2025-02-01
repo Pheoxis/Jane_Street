@@ -1,4 +1,4 @@
-# Dashboard 
+# [Dashboard](https://janedashboard.streamlit.app/about_data) 
 W tym folderze znajduą się pliki odpowiadające za Dashboard
 ________________________________________
 •	Introduction:
