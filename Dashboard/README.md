@@ -1,25 +1,40 @@
-# [Dashboard](https://janedashboard.streamlit.app/about_data) 
-W tym folderze znajduą się pliki odpowiadające za Dashboard
-________________________________________
-•	Introduction:
+# [Dashboard](https://janedashboard.streamlit.app/about_data)  
+W tym folderze znajdują się pliki odpowiadające za Dashboard.  
 
-Na tej stronie znajduje się Wprowadzenie i opis projektu jka np Nasze założenia i przebieg projektu, Metoda Pozyskiwania Danych, Cel Badania, Analiza Danych i Tworzenie Dashboardu,Rezultaty i Następne Kroki
-________________________________________
-•	About data:
+---
 
-Na tej stronie znajduje się opis i wgląd do plików csv które zostału użyte w projekcie
-________________________________________
-•	Charts:
+### • Introduction:  
+Strona zawiera wprowadzenie i opis projektu, w tym:  
+- Nasze założenia i przebieg projektu,  
+- Metoda pozyskiwania danych,  
+- Cel badania,  
+- Analiza danych i tworzenie Dashboardu,  
+- Rezultaty i następne kroki.  
 
-Na tej stronie znajdują się wykresy z EDA itp wraz z ich omówieniami 
-________________________________________
-•	Uruchomienie Dashboardu:
+---
 
-Aby uruchomić dashboard należy dostac się do swojego venv oraz go aktywować następnie przejść do miejsca gdzie mamy plik introduction.py a następnie uruchomić komendę *streamlit run introduction.py*  
+### • About data:  
+Strona zawiera opis oraz wgląd do plików CSV użytych w projekcie.  
 
-najważniejsze biblioteki:  
-•	pandas==2.2.3  
-• streamlit==1.41.1  
-• numpy==2.2.1  
-• matplotlib==3.10.0  
-• seaborn==0.13.2
+---
+
+### • Charts:  
+Strona zawiera wykresy z analizy eksploracyjnej danych (EDA) wraz z ich omówieniem.  
+
+---
+
+### • Uruchomienie Dashboardu:  
+Aby uruchomić Dashboard, należy:  
+1. Wejść do swojego środowiska wirtualnego (*venv*) i je aktywować.  
+2. Przejść do katalogu, w którym znajduje się plik `introduction.py`.  
+3. Uruchomić komendę:  
+   ```
+   streamlit run introduction.py
+   ```  
+
+#### Najważniejsze biblioteki:  
+- `pandas==2.2.3`  
+- `streamlit==1.41.1`  
+- `numpy==2.2.1`  
+- `matplotlib==3.10.0`  
+- `seaborn==0.13.2`  
