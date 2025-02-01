@@ -10,7 +10,7 @@ Projekt dotyczy modelowania szeregów czasowych i optymalizacji hiperparametrów
 - **README.md** – Opis projektu, jego struktury oraz wykorzystywanych bibliotek.
 - **RayTuneHPO.ipynb** – Skrypt do optymalizacji hiperparametrów z użyciem **Ray Tune** oraz **OptunaSearch**.
 - **AutoGluon.ipynb** – Implementacja modelowania przy użyciu **AutoGluon** oraz preprocessing danych.
-- **DatasetConversion.ipynb** – Konwersja zbioru danych z **Parquet** na **CSV**, w tym dodawanie lagów i podział na zbiór treningowy, walidacyjny i testowy.
+- **DatasetConversion.ipynb** – Konwersja zbioru danych z **Parquet** na **CSV**, w tym dodawanie lagów.
 
 ## 3. Biblioteki i narzędzia
 W projekcie używane są następujące biblioteki:
