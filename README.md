@@ -1,4 +1,4 @@
-# Jane_Street  
+# Jane Street Real-Time Market Data Forecasting 
 
 ## Temat: Prognozowanie w czasie rzeczywistym danych rynkowych przy użyciu algorytmów uczenia maszynowego  
 **Dziedzina:** Finanse  
