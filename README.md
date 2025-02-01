@@ -57,7 +57,7 @@ Projekt zakłada stworzenie interaktywnego **dashboardu** przedstawiającego:
 - **README.md** -> zawiera opis EDA.  
 - **sampled_output.parquet** -> zawiera zsamplowane dane, na których zostało przeprowadzone EDA.  
 
-### 2. Dashboard:  
+### 2. [Dashboard](https://janedashboard.streamlit.app/about_data):  
 - **images/** -> zawiera pomniejsze foldery i zdjęcia wykorzystywane w dashboardzie.  
 - **pages/** -> zawiera pliki *1_about_data.py* i *2_charts.py*, opisane w README.md.  
 - **introduction.py** -> główna strona dashboardu, bardziej opisana w README.md.  
